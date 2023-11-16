@@ -1,0 +1,45 @@
+.service {
+    &__title {
+        font-size: 70px;
+        text-align: center;
+    }
+    &__text {
+        font-size: 25px;
+        text-align: center;
+        line-height: 38px;
+        margin: 10px 0 60px 0;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        &-item {
+            position: relative;
+            width: 30%;
+            height: 400px;
+            &-num {
+                position: absolute;
+                top: -60px;
+                right: 50px;
+                font-size: 300px;
+                background: linear-gradient(180deg, rgba(61, 79, 59, 0.37) 0%, rgba(61, 79, 59, 0.00) 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            &-title {
+                position: absolute;
+                top: 70px;
+                left: 50px;
+                font-size: 35px;
+                
+            }
+            &-text {
+                position: absolute;
+                top: 220px;
+                left: 50px;
+                max-width: 350px;
+                font-size: 22px;
+            }
+        }
+    }
+}

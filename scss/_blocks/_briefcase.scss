@@ -1,0 +1,52 @@
+.briefcase {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    &__left {
+        width: 800px;
+        height: 500px;
+        background-color: antiquewhite;
+        margin: 0 60px 0 0;
+    }
+    &__right {
+        width: 600px;
+        &-title {
+            font-size: 65px;
+        }
+        &-text {
+            width: 460px;
+            font-size: 25px;
+            line-height: 38px;
+            margin: 30px 0;
+        }
+        &-btn {
+            width: 260px;
+            height: 80px;
+            font-size: 20px;
+            font-weight: 600;
+            border: none;
+            border-radius: 20px;
+            background: linear-gradient(87deg, #DC6B30 17.99%, #E4864F 49.64%, #FFBE82 72.7%, #E49031 93.02%);
+            box-shadow: 0px -4px 0px 0px #8F4119 inset, 0px 3px 49px -3px rgba(226, 128, 72, 0.76); 
+        }
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        margin: 120px 0;
+        gap: 300px;
+        &-item {
+            text-align: center;
+            font-size: 26px;
+            span {
+                font-size: 70px;
+                font-weight: 700;
+                background: linear-gradient(180deg, #65CB7C 0%, #466951 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;   
+            }
+        }
+    }
+}
