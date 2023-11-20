@@ -356,3 +356,27 @@ function addAnimation() {
     });
   });
 }
+
+
+
+
+// Sroller navbar 
+
+ // JavaScript kodlari
+ document.addEventListener("DOMContentLoaded", function() {
+  // Navbar elementini tanlash
+  var navbar = document.getElementById("navbar");
+
+  // Scroll holatidagi o'zgarishlarni eshitish
+  window.addEventListener("scroll", function() {
+      // Scroll holati tepasidan nechta px yuqori chiqqanligini tekshirish
+      var scrollPosition = window.scrollY;
+      if (scrollPosition > 5) {
+          // Agar scrollPosition 100 dan katta bo'lsa, navbar rangini o'zgartirish
+          navbar.classList.add("black");
+      } else {
+          // Aks holda, navbar rangini qaytarish
+          navbar.classList.remove("black");
+      }
+  });
+});
