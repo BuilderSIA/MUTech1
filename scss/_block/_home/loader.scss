@@ -17,10 +17,12 @@
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #3498db;
-    -webkit-animation: spin 2s linear infinite;
+    -webkit-animation: spin 5s linear infinite;
+    overflow: hidden;
+
     /* Chrome, Opera 15+, Safari 5+ */
     
-    animation: spin 2s linear infinite;
+    animation: spin 5s linear infinite;
     /* Chrome, Firefox 16+, IE 10+, Opera */
     
     z-index: 1001;
@@ -43,7 +45,7 @@
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #e74c3c;
-    -webkit-animation: spin 3s linear infinite;
+    -webkit-animation: spin 5s linear infinite;
     /* Chrome, Opera 15+, Safari 5+ */
     
     animation: spin 3s linear infinite;
@@ -58,11 +60,11 @@
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #f9c922;
-    -webkit-animation: spin 1.5s linear infinite;
+    border-top-color: hsl(47, 95%, 55%);
+    -webkit-animation: spin 10s linear infinite;
     /* Chrome, Opera 15+, Safari 5+ */
     
-    animation: spin 1.5s linear infinite;
+    animation: spin 01s linear infinite;
     /* Chrome, Firefox 16+, IE 10+, Opera */
   }
   @-webkit-keyframes spin {
@@ -161,7 +163,7 @@
   }
   .loaded #loader {
     opacity: 0;
-    -webkit-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.7s ease-out;
     transition: all 0.3s ease-out;
   }
   .loaded #loader-wrapper {
@@ -175,8 +177,8 @@
     transform: translateY(-100%);
     /* Firefox 16+, IE 10+, Opera */
     
-    -webkit-transition: all 0.3s 1s ease-out;
-    transition: all 0.3s 1s ease-out;
+    -webkit-transition: all 05s 5s ease-out;
+    transition: all 05s 5s ease-out;
   }
   /* JavaScript Turned Off */
   

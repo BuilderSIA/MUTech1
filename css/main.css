@@ -3,96 +3,94 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-  background-color: cadetblue;
-  position: relative;
-  margin: 0px 0px 0px 0px;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
 .header {
+  width: 1920px;
+  height: 1080px;
+  background: #7d1147;
+}
+.header .hero {
   width: 100%;
+  height: 120px;
   border: 1px solid;
   display: flex;
   justify-content: center;
 }
-.header .navbar {
-  width: 85%;
-  border: 1px solid;
-  height: 120px;
+.header .hero .navbar {
   position: fixed;
+  width: 85%;
+  height: 120px;
+  border: 1px solid;
   display: flex;
+  z-index: 10;
 }
-.header .navbar .navbar__list {
+.header .hero .navbar .navbar__list {
   width: 70%;
   height: 100%;
+  border: 1px solid;
   display: flex;
 }
-.header .navbar .navbar__list ul {
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
+.header .hero .navbar .navbar__list ul {
   display: flex;
-  gap: 15px;
+  width: 90%;
+  border: 1px solid;
+  align-items: center;
+  gap: 25px;
 }
-.header .navbar .navbar__list ul li {
-  width: 150px;
-  display: flex;
+.header .hero .navbar .navbar__list ul li {
+  flex: 5;
   align-items: center;
   justify-content: center;
+  display: flex;
 }
-.header .navbar .navbar__list ul li img {
+.header .hero .navbar .navbar__list ul li img {
   width: 100%;
+  height: 110px;
 }
-.header .navbar .navbar__list ul li select {
+.header .hero .navbar .navbar__list ul li select {
   display: inline;
-  width: 80px;
+  width: 70px;
   height: 50px;
   border-radius: 50%;
   background: none;
   border: none;
   color: #fff;
 }
-.header .navbar .navbar__list ul li select option {
-  color: #E7AA19;
+.header .hero .navbar .navbar__list ul li select option {
   background: black;
-}
-.header .navbar .navbar__list ul li select:focus {
+  color: white;
   border: none;
 }
-.header .navbar .navbar__list ul li a {
-  color: #fff;
+.header .hero .navbar .navbar__list ul li a {
   font-size: 18px;
-  transition: 1s;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  transition: 0.5s;
+  color: #fff;
 }
-.header .navbar .navbar__list ul li a:hover {
+.header .hero .navbar .navbar__list ul li a:hover, .header .hero .navbar .navbar__list ul li a:focus {
   background: radial-gradient(3992.22% 112.45% at 8.04% 17.65%, #E7AA19 0%, #CB6D9C 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.header .navbar .navbar__list ul li a:focus {
-  background: radial-gradient(3992.22% 112.45% at 8.04% 17.65%, #E7AA19 0%, #CB6D9C 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.header .navbar .navbar__login {
+.header .hero .navbar .navbar__login {
   width: 30%;
   height: 100%;
+  border: 1px solid;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  overflow-x: hidden;
+  gap: 20px;
 }
-.header .navbar .navbar__login .login__button {
-  width: 115px;
-  height: 66px;
+.header .hero .navbar .navbar__login .login__button {
+  width: 113px;
+  height: 60px;
+  flex-shrink: 0;
   border-radius: 20px;
   border: 1px solid #FF8924;
   background: none;
@@ -101,10 +99,15 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: 0.5;
 }
-.header .navbar .navbar__login a {
+.header .hero .navbar .navbar__login .login__button:hover, .header .hero .navbar .navbar__login .login__button:focus {
+  border: 1px solid #cd5f00;
+}
+.header .hero .navbar .navbar__login a {
   width: 234px;
   height: 66px;
+  flex-shrink: 0;
   border-radius: 20px;
   background: linear-gradient(87deg, #DC6B30 17.99%, #E4864F 49.64%, #FFBE82 72.7%, #E49031 93.02%);
   box-shadow: 0px -4px 0px 0px #8F4119 inset, 0px 3px 49px -3px rgba(226, 128, 72, 0.76);
@@ -117,19 +120,133 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  list-style: none;
-  transition: 5s;
 }
-.header .navbar .navbar__login a:hover {
-  background: linear-gradient(87deg, #e46c2b 17.99%, #ca865c 49.64%, #d5a578 72.7%, #e7c299 93.02%);
+.header .hero .navbar .navbar__login a:hover, .header .hero .navbar .navbar__login a:focus {
+  background: linear-gradient(87deg, #DC6B30 17.99%, #E4864F 49.64%, #f19641 72.7%, #df8a29 93.02%);
+}
+.header .continer {
+  width: 1920px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+}
+.header .continer .hero {
+  width: 85%;
+  border: 1px solid;
+  display: flex;
+  height: 700px;
+  margin-top: 50px;
+}
+.header .continer .hero .hero__list {
+  width: 67%;
+  border: 1px solid;
+}
+.header .continer .hero .hero__list h2 {
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 117.2%;
+  width: 100%;
+  height: 290px;
+  color: white;
+}
+.header .continer .hero .hero__list ul, .header .continer .hero .hero__list li {
+  list-style-type: circle;
+  color: #EAE9E9;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 158.7%;
+}
+.header .continer .hero .hero__list .buttons {
+  display: flex;
+  max-width: 60%;
+  gap: 20px;
+  align-items: center;
+  margin-top: 50px;
+}
+.header .continer .hero .hero__list .buttons #button-1 {
+  width: 315px;
+  height: 106px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: linear-gradient(87deg, #DC6B30 17.99%, #E4864F 49.64%, #FFBE82 72.7%, #E49031 93.02%);
+  box-shadow: 0px -4px 0px 0px #8F4119 inset, 0px 3px 49px -3px rgba(226, 128, 72, 0.76);
+  color: #000;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 158.7%;
+}
+.header .continer .hero .hero__list .buttons #button-1:hover, .header .continer .hero .hero__list .buttons #button-1:focus {
+  background: linear-gradient(87deg, #DC6B30 17.99%, #E4864F 49.64%, #f19641 72.7%, #df8a29 93.02%);
+}
+.header .continer .hero .hero__list .buttons #button-2 {
+  border-radius: 20px;
+  border: 4px solid #CE6933;
+  background: none;
+  width: 315px;
+  height: 106px;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 158.7%; /* 34.914px */
+}
+.header .continer .hero .hero__list .buttons #button-2:hover, .header .continer .hero .hero__list .buttons #button-2:focus {
+  border: 3px solid #cd5f00;
+}
+.header .continer .hero .hero__img {
+  width: 33%;
+  border: 1px solid;
+}
+.header .continer .hero .hero__img img {
+  position: absolute;
+  width: 700px;
+  right: 0;
+  top: 8rem;
 }
 
-.container {
-  width: 100%;
-  border: 1px solid red;
-  height: 600px;
-  margin-top: 120px;
+.section__money {
+  width: 1920px;
+  border: 1px solid;
+  background-color: burlywood;
+}
+.section__money .contiyner {
+  width: 85%;
+  border: 1px solid;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.section__money .contiyner h2 {
+  text-align: center;
+  width: 851px;
+  border: 1px solid;
+  color: #FFF;
+  text-align: center;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 117.2%;
+}
+.section__money .contiyner span {
+  display: inline;
+  width: 790px;
+  border: 1px solid;
+  color: #FFF;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 158.2%;
+}
+.section__money .contiyner span b {
+  font-weight: 700;
 }
 
 #loader-wrapper {
@@ -152,9 +269,10 @@ body {
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: #3498db;
-  -webkit-animation: spin 2s linear infinite;
+  -webkit-animation: spin 5s linear infinite;
+  overflow: hidden;
   /* Chrome, Opera 15+, Safari 5+ */
-  animation: spin 2s linear infinite;
+  animation: spin 5s linear infinite;
   /* Chrome, Firefox 16+, IE 10+, Opera */
   z-index: 1001;
 }
@@ -178,7 +296,7 @@ body {
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: #e74c3c;
-  -webkit-animation: spin 3s linear infinite;
+  -webkit-animation: spin 5s linear infinite;
   /* Chrome, Opera 15+, Safari 5+ */
   animation: spin 3s linear infinite;
   /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -193,10 +311,10 @@ body {
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #f9c922;
-  -webkit-animation: spin 1.5s linear infinite;
+  border-top-color: hsl(47, 95%, 55%);
+  -webkit-animation: spin 10s linear infinite;
   /* Chrome, Opera 15+, Safari 5+ */
-  animation: spin 1.5s linear infinite;
+  animation: spin 1s linear infinite;
   /* Chrome, Firefox 16+, IE 10+, Opera */
 }
 
@@ -284,7 +402,7 @@ body {
 
 .loaded #loader {
   opacity: 0;
-  -webkit-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.7s ease-out;
   transition: all 0.3s ease-out;
 }
 
@@ -296,8 +414,8 @@ body {
   /* IE 9 */
   transform: translateY(-100%);
   /* Firefox 16+, IE 10+, Opera */
-  -webkit-transition: all 0.3s 1s ease-out;
-  transition: all 0.3s 1s ease-out;
+  -webkit-transition: all 5s 5s ease-out;
+  transition: all 5s 5s ease-out;
 }
 
 /* JavaScript Turned Off */
